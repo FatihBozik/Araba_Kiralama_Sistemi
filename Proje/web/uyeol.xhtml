@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>KÜBRA AÇIKGÖZ</title>
+        <h:outputStylesheet library="css" name="demo.css"  />
+    </h:head>
+    <h:body style="background-image: url(../resources/images/backresim.jpg)">
+
+
+
+             <div class="form" align="center">
+                <center><h:form style="margin-top: 150px;" >
+  				<h:panelGrid width="300px" columns="2" border="0">
+					<f:facet name="header">
+					<h:outputText value="Kayıt Ol"/>
+				    </f:facet>
+					<h:outputText value="Kullanıcı Adı:" />					
+					
+                                        <h:inputText id="username" value="#{registerBean.kullaniciAdi}" required="true"
+								 requiredMessage="Kullanıcı Adı alanı boş bırakılamaz" />                                                                                    
+                                        <f:verbatim><br/></f:verbatim>
+					<h:message for="username"/>
+
+					<h:outputText value="Şifre:"  />					
+                                        <h:inputSecret id="password" value="#{registerBean.sifre}" required="true"
+						     requiredMessage="Şifre alanı boş bırakılamaz" />
+                                                     <f:verbatim><br/></f:verbatim>
+                                                     <h:message for="password"/>
+                                                     
+					<h:outputText value="Adınız: " />
+                                        <h:inputText id="name" value="#{registerBean.isim}" required="true"
+						     requiredMessage="Lütfen Adınızı girin" />
+                                        <f:verbatim><br/></f:verbatim>
+                                                    <h:message for="name"/>
+                                                     
+										
+					<h:outputText value="Soyadınız: " />
+                                        <h:inputText id="surname" value="#{registerBean.soyisim}" required="true"
+						     requiredMessage="Lütfen Soyadınızı girin"
+                                                     validatorMessage="Rakam ya da özel harf kullanmayın.">
+                                                     <f:validateRegex pattern="(\w)*" />" 
+                                        </h:inputText><f:verbatim><br/></f:verbatim>
+                                        <h:message for="surname"/>
+                                        
+					<h:outputText value="E-Mail: " />
+                                        <h:inputText id="email" value="#{registerBean.email}" required="true"
+						     requiredMessage="Lütfen E-Mail'inizi girin" >                                                    
+                                        </h:inputText><f:verbatim><br/></f:verbatim>
+                                        <h:message for="email"/>
+                                                         
+					
+					<h:outputText value="Telefon " />
+                                        <h:inputText id="telefon" value="#{registerBean.telefon}" 
+                                                     required="true"
+						     requiredMessage="Şifre alanı boş bırakılamaz" />
+                                        <f:verbatim><br/></f:verbatim>
+                                        <h:message for="telefon"/>
+                                        
+                                        
+					
+					<h:outputText value=" " />
+					<h:panelGroup>
+                                            <h:commandButton value="Kaydı Tamamla" actionListener="#{registerBean.addDB()}"/>
+                                            <h:commandButton value="Temizle" type="reset" />
+                                                        
+					</h:panelGroup>
+
+				</h:panelGrid>
+    </h:form>
+	</center>
+                </div> 
+
+
+    </h:body>
+</html>

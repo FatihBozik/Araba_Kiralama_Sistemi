@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>main</from-outcome>
+            <to-view-id>/uyeol.html</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/kayit.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>onayla</from-outcome>
+            <to-view-id>/onay.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>duzenle</from-outcome>
+            <to-view-id>/uyeol.html</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/uyeol.html</from-view-id>
+        <navigation-case>
+            <from-outcome>kayit</from-outcome>
+            <to-view-id>/kayit.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>

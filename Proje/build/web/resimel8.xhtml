@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>KÜBRA AÇIKGÖZ</title>
+        <h:outputStylesheet library="css" name="demo.css"/>
+    </h:head>
+<h:body>
+<div class="ustcizgi">
+</div>
+
+<div class="clearfix"></div>
+
+<div class="ustserit">
+	<div class="logo">
+		<img src="resources/images/logo1.png"/>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+<div class="clearfix"></div>
+<div class="serit">
+	<ul id="menu">
+		<li><a href="index.xhtml">ANASAYFA</a></li>
+		<li>
+			<a href="#">ARAÇ FİLOMUZ</a>
+			<ul>
+				<li><a href="luxarac.html">LUX ARAÇ</a></li>
+				<li><a href="jeep.html">JEEP KİRALAMA</a></li>
+				<li><a href="ekonomiklux.html">EKONOMİK LÜX</a></li>
+				<li><a href="ekonomik.html">EKONOMİK</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">KİRALAMA DETAYI</a>
+			<ul>
+				<li><a href="ehliyetyas.html">EHLİYET VE YAŞ</a></li>
+				<li><a href="kiralamakosullari.html">KİRALAMA KOŞULLARI</a></li>
+				<li><a href="teslimat.html">TESLİMAT</a></li>
+				<li><a href="sigorta.html">SİGORTA</a></li>
+			</ul>
+		</li>
+		<li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+		<li><a href="iletisim.html">İLETİŞİM</a></li>
+	</ul>
+</div>
+<div class="clearfix"></div>
+<div class="iletisim">
+	<h1>EKONOMİK LUX</h1>
+	<div class="iletisim_form">
+		<h2>Volkswagen</h2>
+                <img class="" alt="" src="resources/images/resimel8.jpg" />
+	</div>
+	<div class="iletisim_bilgi">
+        <br />
+<h2>ARAÇ ÖZELLİKLERİ :</h2>		
+<p>Marka:  Volkswagen</p>	
+<p>Kiralama Model:  Volkswagen</p>	
+<p>Yıl:    2012</p>	
+<p>Motor:  3000</p>	
+<p>Vites:  Tiptronic Vites</p>	
+<p>Kasa Tipi: Sedan</p>
+<p>Yakıt Tipi: Dizel</p>
+   <br />   <br />
+<div class="kirala" style="margin-left:5px;">
+            <h:form>
+                <h:panelGrid style="width:60px; height:100px;" bgcolor="#e6edfd" columns="3" border="0">
+                    <f:facet name="header">
+                        <h:outputText value="Polo"/>
+                    </f:facet>
+                   <h:outputText value="GÜN:"/>
+              
+                      <h:selectOneMenu value = "#{kiralaBean.gun}">
+                        <f:selectItem itemValue="1" itemLabel="1 Gün" />
+                        <f:selectItem itemValue="2" itemLabel="2 Gün" />
+                        <f:selectItem itemValue="3" itemLabel="3 Gün" />
+                        <f:selectItem itemValue="4" itemLabel="4 Gün" />
+                        <f:selectItem itemValue="5" itemLabel="5 Gün" />
+                        <f:selectItem itemValue="6" itemLabel="6 Gün " />
+                        <f:selectItem itemValue="7" itemLabel="7 Gün" />
+                        <f:selectItem itemValue="8" itemLabel="8 Gün" />
+                        <f:selectItem itemValue="9" itemLabel="9 Gün" />
+                        <f:selectItem itemValue="10" itemLabel="10 Gün" />
+                        <f:selectItem itemValue="11" itemLabel="11 Gün" />
+                        <f:selectItem itemValue="12" itemLabel="12 Gün" />
+                        <f:selectItem itemValue="13" itemLabel="13 Gün" />
+                        <f:selectItem itemValue="14" itemLabel="14 Gün" />
+                        <f:selectItem itemValue="15" itemLabel="15 Gün" />
+                        <f:selectItem itemValue="16" itemLabel="16 Gün" />
+                        <f:selectItem itemValue="17" itemLabel="17 Gün" />
+                        <f:selectItem itemValue="18" itemLabel="18 Gün" />
+                        <f:selectItem itemValue="19" itemLabel="19 Gün" />
+                        <f:selectItem itemValue="20" itemLabel="20 Gün" />
+                        <f:selectItem itemValue="21" itemLabel="21 Gün" />
+                        <f:selectItem itemValue="22" itemLabel="22 Gün" />
+                        <f:selectItem itemValue="23" itemLabel="23 Gün" />
+                        <f:selectItem itemValue="24" itemLabel="24 Gün" />
+                        <f:selectItem itemValue="25" itemLabel="25 Gün" />
+                        <f:selectItem itemValue="26" itemLabel="26 Gün" />
+                        <f:selectItem itemValue="27" itemLabel="27 Gün" />
+                        <f:selectItem itemValue="28" itemLabel="28 Gün" />
+                        <f:selectItem itemValue="29" itemLabel="29 Gün" />
+                        <f:selectItem itemValue="30" itemLabel="30 Gün" />
+                    </h:selectOneMenu>                                                              
+                    <br />
+                    <h:outputText value="STOK:"/>
+                    <h:outputText value="#{kiralaBean.stok}"/>
+                    <br />
+                    <h:outputText value="FİYAT:"/>
+                    <h:outputText value="#{kiralaBean.fiyat}"/>
+                    <br />
+                    
+                    <h:commandButton value="STOK" action="#{kiralaBean.stokver(Polo)}">
+                    <f:setPropertyActionListener target="#{kiralaBean.tabloAdi}" value="EkonomikLux" />
+                    </h:commandButton>
+                    <h:commandButton value="FİYAT" action="#{kiralaBean.fiyatver(Polo)}">
+                    <f:setPropertyActionListener target="#{kiralaBean.tabloAdi}" value="EkonomikLux" />
+                    </h:commandButton>
+                    <h:commandButton value="KİRALA" action="#{kiralaBean.kiraver(Polo)}">
+                        <f:setPropertyActionListener target="#{kiralaBean.tabloAdi}" value="EkonomikLux" />
+                    </h:commandButton>
+                </h:panelGrid>
+            </h:form>
+        </div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<div class="footer">
+	Copyright  2014 | Tüm hakları İssizzler' e saklıdır.
+</div>
+<div class="clearfix"></div>
+</h:body>
+</html>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>KÜBRA AÇIKGÖZ</title>
+        <h:outputStylesheet library="css" name="demo.css"/>
+    </h:head>
+<h:body>
+<div class="ustcizgi">
+</div>
+
+<div class="clearfix"></div>
+
+<div class="ustserit">
+	<div class="logo">
+		<img src="resources/images/logo1.png"/>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+<div class="clearfix"></div>
+<div class="serit">
+	<ul id="menu">
+		<li><a href="index.xhtml">ANASAYFA</a></li>
+		<li>
+			<a href="#">ARAÇ FİLOMUZ</a>
+			<ul>
+				<li><a href="luxarac.html">LUX ARAÇ</a></li>
+				<li><a href="jeep.html">JEEP KİRALAMA</a></li>
+				<li><a href="ekonomiklux.html">EKONOMİK LÜX</a></li>
+				<li><a href="ekonomik.html">EKONOMİK</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">KİRALAMA DETAYI</a>
+			<ul>
+				<li><a href="ehliyetyas.html">EHLİYET VE YAŞ</a></li>
+				<li><a href="kiralamakosullari.html">KİRALAMA KOŞULLARI</a></li>
+				<li><a href="teslimat.html">TESLİMAT</a></li>
+				<li><a href="sigorta.html">SİGORTA</a></li>
+			</ul>
+		</li>
+		<li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+		<li><a href="iletisim.html">İLETİŞİM</a></li>
+	</ul>
+</div>
+    <h1>Ekonomik Luks Araçlar Tablosu : Araç Ekle</h1>
+ <h:form>
+ <h:panelGrid columns="3">
+     
+ <h:outputText value="Marka :"/>
+ <h:inputText id="markaInputText" required="true"
+ requiredMessage="Lütfen bir marka girin"
+ value="#{databaseBean.marka}" maxlength="30"/>
+ <h:message for="markaInputText"/>
+ 
+ <h:outputText value="Kiralama Modeli:"/>
+ <h:inputText id="modelInputText" required="true"
+ requiredMessage="Lütfen bir model girin"
+ value="#{databaseBean.kiralamaModeli}" maxlength="30"/>
+ <h:message for="modelInputText"/>
+ 
+ <h:outputText value="Yıl:"/>
+ <h:inputText id="yilInputText" required="true"
+ requiredMessage="Lütfen yıl girin"
+ value="#{databaseBean.yil}" maxlength="2014"/>
+ <h:message for="yilInputText" />
+ 
+ <h:outputText value="Motor:"/>
+ <h:inputText id="motorInputText" required="true"
+ requiredMessage="Please enter state"
+ value="#{databaseBean.motor}" maxlength="30"/>
+ <h:message for="motorInputText"/>
+ 
+<h:outputText value="Vites:"/>
+ <h:inputText id="vitesInputText" required="true"
+requiredMessage="Lütfen vites itip giriniz."
+value="#{databaseBean.vites}" maxlength="30"/>
+ <h:message for="vitesInputText"/>
+ 
+ <h:outputText value="Kasa Tipi:"/>
+ <h:inputText id="kasaTipiInputText" required="true"
+ requiredMessage="Lütfen kasa tipi girin"
+ value="#{databaseBean.kasaTipi}" maxlength="30"/>
+ <h:message for="kasaTipiInputText"/>
+ 
+ <h:outputText value="Yakıt Tipi:"/>
+ <h:inputText id="yakitTipiInputText" required="true"
+ requiredMessage="Lütfen yakıt tipi girin"
+ value="#{databaseBean.yakitTipi}" maxlength="30"/>
+ <h:message for="yakitTipiInputText"/>
+ 
+ <h:outputText value="Stok"/>
+ <h:inputText id="stokInputText" required="true"
+ requiredMessage="Lütfen stok girin"
+ value="#{databaseBean.stok}" maxlength="1500"/>
+ <h:message for="stokInputText"/>
+ 
+ <h:outputText value="Günlük Kiralama Bedeli"/>
+ <h:inputText id="fiyatInputText" required="true"
+ requiredMessage="Lütfen TL bazında fiyat girin"
+ value="#{databaseBean.fiyat}" maxlength="1000"/>
+ <h:message for="fiyatInputText"/>
+ 
+ </h:panelGrid>
+     
+     <h:commandButton value="Aracı Ekle" action="#{databaseBean.save}" >
+         <f:setPropertyActionListener target="#{databaseBean.tabloAdi}" value="EkonomikLuks" />
+     </h:commandButton>
+<h:commandButton value="Temizle" type="reset"/>
+
+ </h:form>
+ <h:outputLink value="#{databaseBean.donus()}">EkonomikLuks Araç Tablosuna Geri Dön</h:outputLink>
+<div class="clearfix"></div>
+<div class="footer">
+	Copyright  2014 | Tüm hakları İssizzler' e saklıdır.
+</div>
+<div class="clearfix"></div>
+</h:body>
+</html>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html   xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<head>    
+<link rel="stylesheet" href="resources/css/demo.css" type="text/css" media="screen" />
+<title>KÜBRA AÇIKGÖZ</title>
+</head>
+<body>
+
+<h:form>
+                <h:panelGrid style="width:200px; height:100px;" bgcolor="#e6edfd" columns="3" border="0">
+                    <f:facet name="header">
+                        <h:outputText value="BMW"/>
+                    </f:facet>
+                    <h:outputText value="GÜN:"/>
+                    <h:selectOneMenu value="menu">
+                        <f:selectItem itemValue="bir" itemLabel="1" />
+                        <f:selectItem itemValue="iki" itemLabel="2" />
+                        <f:selectItem itemValue="uc" itemLabel="3" />
+                        <f:selectItem itemValue="dort" itemLabel="4" />
+                        <f:selectItem itemValue="bes" itemLabel="5" />
+                        <f:selectItem itemValue="alti" itemLabel="6" />
+                        <f:selectItem itemValue="yedi" itemLabel="7" />
+                        <f:selectItem itemValue="sekiz" itemLabel="8" />
+                        <f:selectItem itemValue="dokuz" itemLabel="9" />
+                        <f:selectItem itemValue="on" itemLabel="10" />
+                        <f:selectItem itemValue="onbir" itemLabel="11" />
+                        <f:selectItem itemValue="oniki" itemLabel="12" />
+                        <f:selectItem itemValue="onuc" itemLabel="13" />
+                        <f:selectItem itemValue="ondort" itemLabel="14" />
+                        <f:selectItem itemValue="onbes" itemLabel="15" />
+                        <f:selectItem itemValue="onalti" itemLabel="16" />
+                        <f:selectItem itemValue="onyedi" itemLabel="17" />
+                        <f:selectItem itemValue="onsekiz" itemLabel="18" />
+                        <f:selectItem itemValue="ondokuz" itemLabel="19" />
+                        <f:selectItem itemValue="yirmi" itemLabel="20" />
+                        <f:selectItem itemValue="yirmibir" itemLabel="21" />
+                        <f:selectItem itemValue="yirmiiki" itemLabel="22" />
+                        <f:selectItem itemValue="yirmiuc" itemLabel="23" />
+                        <f:selectItem itemValue="yirmidort" itemLabel="24" />
+                        <f:selectItem itemValue="yirmibes" itemLabel="25" />
+                        <f:selectItem itemValue="yirmialti" itemLabel="26" />
+                        <f:selectItem itemValue="yirmiyedi" itemLabel="27" />
+                        <f:selectItem itemValue="yirmisekiz" itemLabel="28" />
+                        <f:selectItem itemValue="yirmidokuz" itemLabel="29" />
+                        <f:selectItem itemValue="otuz" itemLabel="30" />
+                    </h:selectOneMenu>                                                 
+                    <br />
+                    <h:outputText value="STOK:"/>
+                    <h:outputText value=" "/>
+                    <br />
+                    <h:outputText value="FİYAT:"/>
+                    <h:outputText value=" "/>
+                    <br />
+                    <h:commandButton value="STOK" action="#{rememberBean.login()}" />
+                    <h:commandButton value="FİYAT" action="#{rememberBean.login()}" />
+                    <h:commandButton value="KİRALA" action="#{rememberBean.login()}" />
+
+                </h:panelGrid>
+            </h:form>
+</body>
+</html>

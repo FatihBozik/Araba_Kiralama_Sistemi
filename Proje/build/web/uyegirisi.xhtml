@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>KÜBRA AÇIKGÖZ</title>
+        <h:outputStylesheet library="css" name="demo.css"  />
+    </h:head>
+    <h:body style="background-image: url(../resources/images/backresim.jpg)">
+
+       
+
+        <div class="form" align="center" style="margin-top: 150px;" >
+            <h:form>
+                <h:panelGrid style="width:250px; height:200px;" columns="2" border="0">
+                    <f:facet name="header">
+                        <h:outputText value="Kullanıcı Girişi"/>
+                    </f:facet>
+                   
+                    <h:outputText value="Kullanıcı Adı"/>
+                    <h:inputText id="loginname" value="#{rememberBean.username}" />                                                   
+
+                    <h:outputText value="Şifre"/>
+                    <h:inputSecret id="password" value="#{rememberBean.password}" /> 
+                    
+                    <h:commandButton value="Giriş Yap" action="#{rememberBean.login()}" style='float: inside' />
+                    <h:commandButton value="Temizle" type="reset" style='float: none'/>
+                    
+                    <h:outputText value="Yeni Kullanıcı?"/>	
+                    <h:commandLink value="Kayıt Ol" action="uyeol"/>
+                    
+                </h:panelGrid>
+            </h:form>
+        </div> 
+
+
+    </h:body>
+</html>

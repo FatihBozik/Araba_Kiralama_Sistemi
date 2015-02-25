@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>KÜBRA AÇIKGÖZ</title>
+        <h:outputStylesheet library="css" name="demo.css"/>
+    </h:head>
+<h:body>
+<div class="ustcizgi">
+</div>
+
+<div class="clearfix"></div>
+
+<div class="ustserit">
+	<div class="logo">
+		<img src="resources/images/logo1.png"/>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+<div class="clearfix"></div>
+<div class="serit">
+	<ul id="menu">
+		<li><a href="index.xhtml">ANASAYFA</a></li>
+		<li>
+			<a href="#">ARAÇ FİLOMUZ</a>
+			<ul>
+				<li><a href="luxarac.html">LUX ARAÇ</a></li>
+				<li><a href="jeep.html">JEEP KİRALAMA</a></li>
+				<li><a href="ekonomiklux.html">EKONOMİK LÜX</a></li>
+				<li><a href="ekonomik.html">EKONOMİK</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">KİRALAMA DETAYI</a>
+			<ul>
+				<li><a href="ehliyetyas.html">EHLİYET VE YAŞ</a></li>
+				<li><a href="kiralamakosullari.html">KİRALAMA KOŞULLARI</a></li>
+				<li><a href="teslimat.html">TESLİMAT</a></li>
+				<li><a href="sigorta.html">SİGORTA</a></li>
+			</ul>
+		</li>
+		<li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+		<li><a href="iletisim.html">İLETİŞİM</a></li>
+	</ul>
+</div>
+    <h:form style="">
+            <h3>Luks Araçlar Tablosu</h3>
+ 
+           <h:dataTable value="#{luksBean.luksArac}" var="araclar"
+           border="1" cellpadding="5" cellspacing="0">
+           <h:column>
+           <f:facet name="header">ID</f:facet>
+           #{araclar.ID}
+           </h:column>
+            <h:column>
+            <f:facet name="header">Marka</f:facet>
+           #{araclar.Marka}
+            </h:column>
+            <h:column>
+            <f:facet name="header">KiralamaModeli</f:facet>
+           #{araclar.KiralamaModel}
+            </h:column>
+            <h:column>
+            <f:facet name="header">Yıl</f:facet>
+           #{araclar.Yil}
+            </h:column>
+            <h:column>
+            <f:facet name="header">Motor</f:facet>
+           #{araclar.Motor}
+            </h:column>
+           <h:column>
+            <f:facet name="header">Vites</f:facet>
+           #{araclar.Vites}
+            </h:column>
+            <h:column>
+            <f:facet name="header">Kasa Tipi</f:facet>
+           #{araclar.KasaTipi}
+            </h:column>
+            <h:column>
+            <f:facet name="header">Yakıt Tipi</f:facet>
+           #{araclar.YakitTipi}
+            </h:column>
+            <h:column>
+           <f:facet name="header">Stok</f:facet>
+           #{araclar.Stok}
+            </h:column>
+            <h:column>
+            <f:facet name="header">1 Günlük Kira Bedeli</f:facet>
+           #{araclar.FIYAT}
+            </h:column>
+            </h:dataTable>
+            
+            <h:commandButton value="Araç Ekle" action="LuksAraclarTablosu_ekle">
+                <f:setPropertyActionListener target="#{databaseBean.tabloAdi}" value="Luks" />
+            </h:commandButton>
+            <h:commandButton value="Araç Sil" action="LuksAraclarTablosu_sil">
+                <f:setPropertyActionListener target="#{databaseBean.tabloAdi}" value="Luks" />
+            </h:commandButton>
+                
+            </h:form> 
+<div class="clearfix"></div>
+<div class="footer">
+	Copyright  2014 | Tüm hakları İssizzler' e saklıdır.
+</div>
+<div class="clearfix"></div>
+</h:body>
+</html>
