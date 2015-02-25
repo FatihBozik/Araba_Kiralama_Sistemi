@@ -7,8 +7,8 @@
 Kübra Açıkgöz <br/>
 Fatih Bozik
 
- ```java
- // ArabaKiralamaDB klasörü C:\Users\KullanıcıAdı\.netbeans-derby yoluna kopyalanacak.
+  ```java
+  ArabaKiralamaDB klasörü C:\Users\KullanıcıAdı\.netbeans-derby yoluna kopyalanacak.
   ```
 
 **Ekran Görüntüleri**
