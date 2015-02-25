@@ -7,9 +7,9 @@
 Kübra Açıkgöz <br/>
 Fatih Bozik
 
-  ```java
-  ArabaKiralamaDB klasörü C:\Users\KullanıcıAdı\.netbeans-derby yoluna kopyalanacak.
-  ```
+  
+  **NOT:** ArabaKiralamaDB klasörü C:\Users\KullanıcıAdı\.netbeans-derby yoluna kopyalanacak.
+  
 
 **Ekran Görüntüleri**
 ![alt text](https://fatihbozik.files.wordpress.com/2015/02/resim19.png)
