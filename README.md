@@ -8,7 +8,7 @@ Kübra Açıkgöz <br/>
 Fatih Bozik
 
   
-  **NOT:** ArabaKiralamaDB klasörü C:\Users\KullanıcıAdı\.netbeans-derby yoluna kopyalanacak.
+  **Not:** ArabaKiralamaDB klasörü C:\Users\KullanıcıAdı\.netbeans-derby yoluna kopyalanacak.
   
 
 **Ekran Görüntüleri**
