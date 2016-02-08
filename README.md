@@ -3,10 +3,6 @@
 ### Kullanılan teknolojiler : JSF, HTML, CSS 
 ### Nisan 2014 - Mayıs 2014
 
-**Grup Üyeleri :** <br/>
-Kübra Açıkgöz <br/>
-Fatih Bozik
-
   
   **Not:** ArabaKiralamaDB klasörü C:\Users\KullanıcıAdı\.netbeans-derby yoluna kopyalanacak.
   
